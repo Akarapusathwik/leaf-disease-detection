@@ -4,7 +4,7 @@
 📝 Abstract
 This project presents a web-based system for detecting plant leaf diseases using deep learning. Leveraging the EfficientNetB0 architecture and trained on the PLD_3_Classes_256 dataset, the model classifies leaf images into Early Blight, Late Blight, or Healthy. The user-friendly Flask web interface allows farmers and researchers to upload images, view predictions with confidence scores, and receive actionable treatment tips. This tool aims to support early disease diagnosis and promote healthier crop management through accessible AI technology.
 
-
+---
 
 This project is a web-based application that detects **plant leaf diseases** using a deep learning model. Built with **Flask** and **EfficientNetB0**, it classifies uploaded images into one of three categories:
 
