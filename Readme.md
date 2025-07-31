@@ -37,7 +37,7 @@ This project is a web-based application that detects **plant leaf diseases** usi
 
 ## 💾 Project Structure
 
-'''<pre lang="bash"><code>``` plant-disease-detector/ │ ├── app.py # Flask backend ├── final_model.keras # Trained model (EfficientNetB0) ├── templates/ │ ├── index.html # Upload page │ └── result.html # Result display page ├── static/ │ └── uploads/ # Uploaded images (auto-generated) ├── .gitignore # Files/folders to exclude from git └── README.md # You're reading it! ``` </code></pre>'''
+```<pre lang="bash"><code>``` plant-disease-detector/ │ ├── app.py # Flask backend ├── final_model.keras # Trained model (EfficientNetB0) ├── templates/ │ ├── index.html # Upload page │ └── result.html # Result display page ├── static/ │ └── uploads/ # Uploaded images (auto-generated) ├── .gitignore # Files/folders to exclude from git └── README.md # You're reading it! ``` </code></pre>```
 ---
 
 ## 🧠 Model Overview
