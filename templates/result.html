@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #f3e5f5, #e1f5fe);
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            animation: fadeIn 1.5s;
+        }
+        .card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 400px;
+            animation: popUp 1s ease-out;
+        }
+        h1 { color: #00695c; margin-bottom: 10px; }
+        h2 { color: #4a148c; margin-bottom: 20px; }
+        .confidence {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            animation: zoomIn 1s;
+        }
+        .tip {
+            background: #e8f5e9;
+            color: #2e7d32;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: left;
+            font-size: 0.95rem;
+            line-height: 1.4;
+            margin-bottom: 20px;
+        }
+        a {
+            display: inline-block;
+            background: #7b1fa2;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        a:hover { background: #4a148c; transform: scale(1.05); }
+
+        @keyframes fadeIn {
+            from {opacity: 0;} to {opacity: 1;}
+        }
+        @keyframes popUp {
+            from {transform: scale(0.5); opacity: 0;} to {transform: scale(1); opacity: 1;}
+        }
+        @keyframes zoomIn {
+            from {transform: scale(0.8); opacity: 0;} to {transform: scale(1); opacity: 1;}
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Prediction:</h1>
+        <h2>{{ prediction }}</h2>
+        <p class="confidence">Confidence: {{ confidence }}%</p>
+        <img src="{{ url_for('static', filename='uploads/' + filename) }}" alt="Uploaded Image">
+        <div class="tip">
+            <strong>Remedial Tip:</strong>
+            <p>{{ tip }}</p>
+        </div>
+        <a href="/">Try Another Image</a>
+    </div>
+</body>
+</html>
