@@ -1,4 +1,4 @@
-# 🌿 Plant Disease Detection Web App using EfficientNet and Flask
+# 🌿 Leaf Disease Detection Web App using EfficientNet and Flask
 :
 
 📝 Abstract
